@@ -1,0 +1,108 @@
+section.navigation {
+    background-color: #3D4E56;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999999;
+    display: none;
+    .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 40px;
+        .column {
+            width: 50%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 40px;
+            box-sizing: border-box;
+            background: {
+                size: cover;
+                position: center;
+            }
+            @media screen and (max-width:640px) {
+                width: 100%;
+            }
+
+            &.img-column {
+                @media screen and (max-width:640px) {
+                    display:none;
+                }
+            }
+
+            a.nav-logo {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                img {
+                    max-width: 72px;
+                }
+            }
+
+            .nav-primary {
+                margin-top: 20vh;
+                width: 100%;
+                @media screen and (max-width:640px) {
+                    width: 100%;
+                    margin-top: 40px;
+                }
+                ul#menu-primary-menu {
+                    list-style: none;
+                    width: 100%;
+                    padding: 0px;
+                    margin: 0px;
+                    >li {
+                        border-top: 1px solid #fff;
+                        padding: 22px 0px;
+                        a {
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            font: {
+                                weight: 300;
+                                size: clamp(12px, 2vw, 15px);
+                            }
+                        }
+                        &:last-of-type {
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+
+                    ul.sub-menu {
+                        display: none;
+                        padding-left: 40px;
+                        padding-top: 20px;
+                        list-style-type: none;
+                        @media screen and (max-width:640px) {
+                            padding-left: 24px;
+                        }
+                        li {
+                            padding: 8px 0px;
+                        }
+                    }
+
+                }
+            }
+
+            .close {
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                svg {
+                    @media screen and (max-width:640px) {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

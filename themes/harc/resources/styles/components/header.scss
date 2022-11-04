@@ -1,0 +1,49 @@
+body {
+    &:not(.home) {
+        header.banner {
+            background: #fff;
+        }
+    }
+}
+
+header.banner {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 30px;
+    border-bottom: 1px solid #3D4E56;
+    z-index: 1;
+    box-sizing: border-box;
+
+
+
+
+    @media screen and (max-width:640px) {
+        padding: 24px 12px;
+        position: relative;
+        background: #fff;
+    }
+    .banner-inner {
+        max-width: 1440px;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        a.brand {
+            img {
+                max-width: 277px;
+            }
+        }
+        a.menu-trigger {
+
+        }
+    }
+}

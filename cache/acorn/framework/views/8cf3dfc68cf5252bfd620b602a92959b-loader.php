@@ -1,0 +1,2 @@
+<?= \Roots\view('partials.comments', $data ?? get_defined_vars())->render(); ?>
+<?php /**PATH /Users/tannerholm/Sites/watford/wp-content/themes/harc/resources/views/partials/comments.blade.php ENDPATH**/ ?>

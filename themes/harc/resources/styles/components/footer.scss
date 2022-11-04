@@ -1,0 +1,138 @@
+footer {
+    background: #fff;
+    padding: 0px 30px;
+    @media screen and (max-width:640px) {
+        padding: 24px 12px;
+        border-top: 1px solid #D9D8D6;
+    }
+    .row {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        @media screen and (max-width:640px) {
+            height: auto;
+            min-height: 80px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+        .column {
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            &.social-copyright {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                @media screen and (max-width:640px) {
+                    order: 2;
+                    width: 50%;
+                    flex-direction: column-reverse;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                }
+                
+                .footer-menu {
+                    display: none;
+                    @media screen and (max-width:640px) {
+                        order: 2;
+                        display: block;
+                        width: 100%;
+                        ul {
+                            padding: 0px;
+                            list-style: none;
+                            margin: 0px;
+                            li {
+                                padding: 5px 0px;
+                                a {
+                                    color: $dark;
+                                    text-decoration: none;
+                                    font-size: 10px;
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                p.copyright {
+                    color: $dark;
+                    font: {
+                        size: clamp(10px, 2vw, 12px);
+                    }
+                    @media screen and (max-width:640px) {
+                        width: 100%;
+                        margin: 0px;
+                    }
+                }
+                ul.socials {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    list-style: none;
+                    padding: 0px;
+                        @media screen and (max-width:640px) {
+                            width: 100%;
+                        }
+                    li {
+                        @media screen and (max-width:640px) {
+                            &:first-of-type {
+                                a {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                        a {
+                            color: $dark;
+                            display: block;
+                            margin: auto 16px;
+                            font: {
+                                size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.logo-column {
+                @media screen and (max-width:640px) {
+                    order: 1;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                }
+                img {
+                    max-width: 52px;
+                }
+            }
+            &.made-by-column {
+                
+                justify-content: flex-end;
+                color: $dark;
+                font: {
+                    size: 10px;
+                }
+                @media screen and (max-width:640px) {
+                    order: 3;
+                    width: 50%;
+                }
+                p {
+                    margin: 0px;
+                }
+
+            }
+        }
+    }
+}

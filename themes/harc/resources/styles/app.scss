@@ -1,0 +1,31 @@
+$dark: #212322;
+@import "../../node_modules/responsive-video-poster/src/styles/responsive-video-poster.scss";
+@import 'views/about.scss';
+@import 'views/home.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/navigation.scss';
+@font-face {
+    font-family: "Avenir Book";
+    src: url('../fonts/avenir-book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+  p, span, ul, li, a {
+    font: {
+        family: "Avenir Book", sans-serif;
+    }
+  }
+
+body.home {
+  @media screen and (min-width:640px) {
+      overflow: hidden;
+      height: 100vh;
+
+  }
+}
