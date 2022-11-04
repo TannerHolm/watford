@@ -2,8 +2,10 @@
 
   <section class="about">
     <div class="row">
-        <div class="column img-column" style="background-image:url(<?= get_field('about_image')['url']; ?>)"></div>
-        <div class="column">
+        <div class="column img-column">
+          <img src="<?= get_field('about_image')['url']; ?>" alt="">
+        </div>
+        <div class="column text-column">
           <div class="about-content">
             <ul>
               <?php ($content_sections = get_field('content_sections')); ?>

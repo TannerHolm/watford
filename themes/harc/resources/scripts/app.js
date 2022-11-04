@@ -26,7 +26,13 @@ const main = async (err) => {
         $('section.navigation').fadeOut();
     });
 
-    
+
+    $('.services .content-title').on('click', function(e){
+      var content = $(this).next('.content');
+      $('.content').not(content).slideUp(); 
+      $(this).next('.content').slideDown();
+  });
+    $('.first .content-title').trigger('click');
     // application code
   };
   

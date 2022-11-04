@@ -2,6 +2,8 @@ $dark: #212322;
 @import "../../node_modules/responsive-video-poster/src/styles/responsive-video-poster.scss";
 @import 'views/about.scss';
 @import 'views/home.scss';
+@import 'views/services.scss';
+@import 'views/contact.scss';
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/navigation.scss';
@@ -16,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-  p, span, ul, li, a {
+  p, span, ul, li, a, input, textarea {
     font: {
         family: "Avenir Book", sans-serif;
     }
@@ -28,4 +30,9 @@ body.home {
       height: 100vh;
 
   }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }
