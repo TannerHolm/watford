@@ -1,0 +1,104 @@
+section.press {
+    background-color: #fff;
+    width: 100vw;
+    padding: 0px 48px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    @media screen and (max-width:640px) {
+        padding-top: 0px;
+        padding: 0px 20px;
+        height: 100%;
+        
+    }
+    .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 2%;
+        flex-wrap: wrap;
+        @media screen and (max-width:1024px) {
+            // column-gap: 0px;
+
+        }
+        .column {
+            width: 31%;
+            height: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            box-sizing: border-box;
+            border-top: 1px solid #D9D8D6;
+            margin-top: 64px;
+            background: {
+                size: cover;
+                position: center;
+            }
+            @media screen and (max-width:640px) {
+                width: 100%;
+                padding-top: 0px;
+                padding: 0px 0px;
+                margin-top: 30px;
+                overflow: visible;
+            }
+            &:first-of-type {
+                @media screen and (max-width: 640px) {
+                   border-top: none;
+                   margin-top: 0px;
+                }
+            }
+            &:last-of-type {
+                @media screen and (max-width: 640px) {
+                    margin-bottom: 30px;
+                }
+            }
+            .source {
+                margin-top: 24px;
+                font: {
+                    size: 12px;
+                    style: italic;
+                }
+            }
+            .title {
+                text-transform: uppercase;
+                letter-spacing: 1.1px;
+
+                font: {
+                    size: 12px;
+                    weight: 500;
+                    family: "Avenir Book";
+                }
+                @media screen and (max-width: 640px) {
+                    margin: 0px;
+                }
+                
+            }
+            .description {
+                line-height: 1.8;
+                margin-top: 14px;
+                margin-bottom: 17px;
+
+                font: {
+                    size: 12px;
+                }
+                * {
+                    margin: 0px;
+                }
+            }
+            .link {
+                line-height: 1.8;
+                color: #212322;
+                font: {
+                    size: 12px;
+                }
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

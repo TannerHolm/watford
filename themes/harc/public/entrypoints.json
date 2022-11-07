@@ -1,12 +1,10 @@
 {
   "app": {
     "js": [
-      "js/runtime.c9c28a.js",
-      "js/575.fb8f9f.js",
-      "js/app.07dbb8.js"
+      "js/app.js"
     ],
-    "css": [
-      "css/app.6d9579.css"
+    "woff": [
+      "fonts/avenir-book.woff"
     ],
     "dependencies": [
       "jquery"
@@ -14,12 +12,7 @@
   },
   "editor": {
     "js": [
-      "js/runtime.c9c28a.js",
-      "js/575.fb8f9f.js",
-      "js/editor.51a65b.js"
-    ],
-    "css": [
-      "css/editor.31d6cf.css"
+      "js/editor.js"
     ],
     "dependencies": [
       "wp-blocks"

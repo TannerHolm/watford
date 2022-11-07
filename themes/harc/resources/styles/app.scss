@@ -4,6 +4,7 @@ $dark: #212322;
 @import 'views/home.scss';
 @import 'views/services.scss';
 @import 'views/contact.scss';
+@import 'views/press.scss';
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/navigation.scss';
@@ -18,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-  p, span, ul, li, a, input, textarea {
+  p, span, ul, li, a, input, textarea, div {
     font: {
         family: "Avenir Book", sans-serif;
     }
