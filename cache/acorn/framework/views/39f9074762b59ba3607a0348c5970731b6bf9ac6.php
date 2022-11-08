@@ -1,39 +1,20 @@
 <?php $__env->startSection('content'); ?>
 
-  <section class="about">
+  <section class="projects">
+    <?php global $query; ?><?php $query = new WP_Query([
+      'post_type' => 'project'
+    ]); ?>
+    <?php if (empty($query)) : ?><?php global $wp_query; ?><?php $query = $wp_query; ?><?php endif; ?><?php if ($query->have_posts()) : ?><?php while ($query->have_posts()) : $query->the_post(); ?>
     <div class="row">
-        <div class="column img-column" style="background-image:url(<?= get_field('about_image')['url']; ?>)"></div>
-        <div class="column">
-          <div class="about-content">
-            <ul>
-              <?php ($content_sections = get_field('content_sections')); ?>
-              <?php $__currentLoopData = $content_sections; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $content): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <?php if($loop->first): ?>
-                  <li class="content-item">
-                    <h2 class="content-title"><?php echo e($content['title']); ?></h2>
-                    <div class="content">
-                      <?php echo $content['content']; ?>
-
-                    </div>
-                  </li>
-                  <li class="hidden-tablet-up">
-                    <img src="<?= get_field('about_image')['url']; ?>" alt="">
-                  </li>
-                <?php else: ?>
-                <li class="content-item">
-                  <h2 class="content-title"><?php echo e($content['title']); ?></h2>
-                  <div class="content">
-                    <?php echo $content['content']; ?>
-
-                  </div>
-                </li>
-                <?php endif; ?>
-              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            </ul>
-            <a href="<?= get_field('page_link'); ?>" class="link"><span><?= get_field('page_link_text'); ?></span> ></a>
-          </div>
+      <div class="column text-column">
+        <h2 class="entry-title"><?= get_the_title(); ?></h2>
         </div>
-    </div>
+        <div class="column img-column">
+          <?= get_the_post_thumbnail(get_the_ID(), 'full'); ?>
+        </div>
+      </div>
+      <hr>
+      <?php endwhile; wp_reset_postdata(); endif; ?>
   </section>
 
 <?php $__env->stopSection(); ?>

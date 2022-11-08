@@ -3,9 +3,6 @@
     "js": [
       "js/app.js"
     ],
-    "woff": [
-      "fonts/avenir-book.woff"
-    ],
     "dependencies": [
       "jquery"
     ]

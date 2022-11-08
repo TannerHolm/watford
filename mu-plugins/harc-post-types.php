@@ -12,7 +12,7 @@
 /*===========================================================*/
 
 
-function bluefire_post_types() {
+function harc_post_type() {
 
 	// Post Type's Labels & Info Here
 	$plural_name = 'Projects';
@@ -22,52 +22,52 @@ function bluefire_post_types() {
 
 	// Post Type's Name Here
 	$labels = array(
-			'name'							 => $plural_name,
+			'name'					 => $plural_name,
 			'singular_name'			 => $singular_name,
-			'menu_name'					 => $plural_name,
+			'menu_name'				 => $plural_name,
 			'name_admin_bar'		 => $singular_name,
-			'add_new'						 => 'Add New',
+			'add_new'				 => 'Add New',
 			'add_new_item'			 => 'Add New ' . $singular_name,
-			'new_item'					 => 'New ' . $singular_name,
-			'edit_item'					 => 'Edit ' . $singular_name,
-			'view_item'					 => 'View ' . $singular_name,
-			'all_items'					 => 'All ' . $plural_name,
+			'new_item'				 => 'New ' . $singular_name,
+			'edit_item'				 => 'Edit ' . $singular_name,
+			'view_item'				 => 'View ' . $singular_name,
+			'all_items'				 => 'All ' . $plural_name,
 			'search_items'			 => 'Search ' . $plural_name,
-			'parent_item_colon'  => 'Parent ' . $plural_name. ':',
-			'not_found'					 => 'No ' . $plural_name . ' found.',
-			'show_in_rest'       => true,
-			'rest_base'          => 'races',
-  		'rest_controller_class' => 'WP_REST_Posts_Controller',
-			'not_found_in_trash' => 'No ' . $plural_name . ' found in trash.'
+			'parent_item_colon'  	 => 'Parent ' . $plural_name. ':',
+			'not_found'				 => 'No ' . $plural_name . ' found.',
+			'show_in_rest'       	 => true,
+			'rest_base'          	 => 'projects',
+  			'rest_controller_class'  => 'WP_REST_Posts_Controller',
+			'not_found_in_trash' 	 => 'No ' . $plural_name . ' found in trash.'
 		);
 
 	$args = array(
-			'labels'					 => $labels,
-			'public'					 => true,
-			'public_queryable' => true,
-			'show_ui'					 => true,
-			'show_in_menu'		 => true,
-			'menu_position'		 => 5,
-			'menu_icon'				 => 'dashicons-lightbulb', // Custom icon in WP-admin area
-			'query_var'				 => true,
-			'rewrite'					 => array( 'slug' => $slug, 'with_front' => false ),
-			'capability_type'	 => 'post',
-			'has_archive'			 => true,
-			'hierarchical'		 => false,
-			'supports'				 => array( 'title')
+			'labels'			=> $labels,
+			'public'			=> true,
+			'public_queryable'	=> true,
+			'show_ui'			=> true,
+			'show_in_menu'		=> true,
+			'menu_position'		=> 5,
+			'menu_icon'			=> 'dashicons-lightbulb', // Custom icon in WP-admin area
+			'query_var'			=> true,
+			'rewrite'			=> array( 'slug' => $slug, 'with_front' => false ),
+			'capability_type'	=> 'post',
+			'has_archive'		=> true,
+			'hierarchical'		=> false,
+			'supports'			=> array( 'title', 'editor', 'thumbnail', 'page-attributes')
 		);
 	register_post_type( $registered_name, $args );
 
 }
 // Init all post types
-add_action( 'init', 'bluefire_post_types' );
+add_action( 'init', 'harc_post_type' );
 
 function my_rewrite_flush() {
   // First, we "add" the custom post type via the above written function.
   // Note: "add" is written with quotes, as CPTs don't get added to the DB,
   // They are only referenced in the post_type column with a post entry,
   // when you add a post of this CPT.
-  bluefire_post_types();
+  harc_post_type();
 
   // ATTENTION: This is *only* done during plugin activation hook in this example!
   // You should *NEVER EVER* do this on every page load!!
