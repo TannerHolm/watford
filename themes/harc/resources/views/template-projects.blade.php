@@ -11,14 +11,14 @@
       'post_type' => 'project'
     ])
     @posts
-    <div class="row">
+    <a href="@permalink" class="row">
       <div class="column text-column">
         <h2 class="entry-title">@title</h2>
-        </div>
-        <div class="column img-column">
-          @thumbnail('full')
-        </div>
       </div>
+      <div class="column img-column">
+          @thumbnail('full')
+      </div>
+    </a>
       <hr>
       @endposts
   </section>
