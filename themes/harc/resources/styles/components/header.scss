@@ -1,9 +1,8 @@
 body {
-    &:not(.home) {
-        header.banner {
-            background: #fff;
-        }
+    header.banner {
+        background: #fff;
     }
+    &:not(.home) {}
 }
 
 header.banner {
@@ -28,6 +27,7 @@ header.banner {
         padding: 24px 12px;
         position: relative;
         background: #fff;
+        position: fixed;
     }
     .banner-inner {
         max-width: 1440px;
