@@ -93,7 +93,7 @@ section.about {
                             margin-bottom: 26px;
                             font: {
                                 weight: 300;
-                                size: clamp(12px, 2vw, 12px);
+                                size: clamp(14px, 2vw, 14px);
                             }
                         }
                         .content * {
@@ -101,7 +101,7 @@ section.about {
                             line-height: 1.6;
                             font: {
                                 weight: 300;
-                                size: clamp(12px, 2vw, 12px);
+                                size: clamp(14px, 2vw, 14px);
                             }
                         }
                         &:first-of-type {
@@ -129,7 +129,7 @@ section.about {
             margin-bottom: 24px;
             display: block;
             // size: clamp(12px, 3vw, 12px);
-            font-size: clamp(12px, 3vw, 12px);
+            font-size: clamp(14px, 3vw, 14px);
             span {
                 text-decoration: underline;
             }

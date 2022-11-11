@@ -5,5 +5,5 @@
 @extends('layouts.app')
 
 @section('content')
-  <video poster="@field('background_video_poster_image', 'url')" loop playsinline autoplay muted class="home-video" data-src="@field('background_video', 'url')"> </video>
+  <video playsinline autoplay="autoplay" loop="true" autoplay="autoplay" muted poster="@field('background_video_poster_image', 'url')" class="home-video" data-src="@field('background_video', 'url')"> </video>
 @endsection

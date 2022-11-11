@@ -5,10 +5,9 @@ section.press {
     padding-top: 60px;
     box-sizing: border-box;
     @media screen and (max-width:640px) {
-        padding-top: 0px;
-        padding: 0px 20px;
+        padding-right: 20px;
+        padding-left: 20px;
         height: 100%;
-        
     }
     .row {
         width: 100%;
@@ -33,7 +32,7 @@ section.press {
             align-items: flex-start;
             box-sizing: border-box;
             border-top: 1px solid #D9D8D6;
-            margin-top: 64px;
+            margin-top: 44px;
             background: {
                 size: cover;
                 position: center;
@@ -57,33 +56,34 @@ section.press {
                 }
             }
             .source {
-                margin-top: 24px;
+                margin-top: 20px;
                 font: {
-                    size: 12px;
+                    size: 14px;
                     style: italic;
                 }
             }
             .title {
                 text-transform: uppercase;
                 letter-spacing: 1.1px;
+                margin-top: 10px;
+                margin-bottom: 10px;
 
                 font: {
-                    size: 12px;
+                    size: 14px;
                     weight: 500;
                     family: "Avenir Book";
                 }
                 @media screen and (max-width: 640px) {
                     margin: 0px;
                 }
-                
             }
             .description {
                 line-height: 1.8;
-                margin-top: 14px;
+                margin-top: 10px;
                 margin-bottom: 17px;
 
                 font: {
-                    size: 12px;
+                    size: 14px;
                 }
                 * {
                     margin: 0px;
@@ -93,7 +93,7 @@ section.press {
                 line-height: 1.8;
                 color: #212322;
                 font: {
-                    size: 12px;
+                    size: 14px;
                 }
                 span {
                     text-decoration: underline;

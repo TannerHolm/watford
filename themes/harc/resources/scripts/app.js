@@ -15,29 +15,34 @@ const main = async (err) => {
 
   var vidSrc = $('.home-video').data('src');
   var video = $('.home-video');
-  var req = new XMLHttpRequest();
-  req.open('GET', vidSrc, true);
-  req.responseType = 'blob';
 
-  req.onload = function() {
-    // Onload is triggered even on 404
-    // so we need to check the status code
-    if (this.status === 200) {
-        var videoBlob = this.response;
-        var vid = URL.createObjectURL(videoBlob); // IE10+
-        // Video is now downloaded
-        // and we can set it as source on the video element
-        // video.src = vid;
-        video.attr('src', vid);
-        console.log('test');
+  if(video.length) {
+    var req = new XMLHttpRequest();
+    req.open('GET', vidSrc, true);
+    req.responseType = 'blob';
+  
+    req.onload = function() {
+      // Onload is triggered even on 404
+      // so we need to check the status code
+      if (this.status === 200) {
+          var videoBlob = this.response;
+          var vid = URL.createObjectURL(videoBlob); // IE10+
+          // Video is now downloaded
+          // and we can set it as source on the video element
+          // video.src = vid;
+          video.attr('src', vid);
+          console.log('test');
+      }
     }
-  }
-  req.onerror = function() {
-    // Error
-  }
 
-  req.send();
-
+    
+    req.onerror = function() {
+      // Error
+    }
+    
+    req.send();
+    
+  }
 
 
   $('.menu-item-has-children').on('click', function(e){
@@ -53,10 +58,13 @@ const main = async (err) => {
     });
 
 
-    $('.services .content-title').on('click', function(e){
-      var content = $(this).next('.content');
+    $('.services .content-item').on('click', function(e){
+      var content = $(this).find('.content');
+      var svg = $(this).find('svg.accordion');
+      $(this).find('svg').addClass('active')
       $('.content').not(content).slideUp(); 
-      $(this).next('.content').slideDown();
+      $('svg.accordion').not(svg).removeClass('active'); 
+      $(this).find('.content').slideDown();
   });
     $('.first .content-title').trigger('click');
     // application code

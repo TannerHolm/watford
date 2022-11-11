@@ -25,6 +25,7 @@ section.navigation {
             align-items: flex-start;
             padding: 40px;
             box-sizing: border-box;
+            overflow: scroll;
             background: {
                 size: cover;
                 position: center;
@@ -45,6 +46,12 @@ section.navigation {
                 left: 40px;
                 img {
                     max-width: 72px;
+                }
+                @media screen and (max-width: 1224px) and (max-height: 800px) {
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                    margin-top: 32px;
                 }
             }
 

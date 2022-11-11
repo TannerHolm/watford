@@ -1,7 +1,7 @@
 article.project {
     padding-top: 60px;
     @media screen and (max-width:640px) {
-        padding-top: 0px;
+        // padding-top: 0px;
 
     }
     .info-banner {
@@ -27,6 +27,7 @@ article.project {
                 width: 50%;
                 h1 {
                     margin-top: 0px;
+                    font-weight: 500;
 
                 }
             }
@@ -139,6 +140,7 @@ article.project {
         box-sizing: border-box;
         @media screen and (max-width: 640px) {
             padding: 16px 20px;
+            padding-top: 0px;
             
         }
         a {

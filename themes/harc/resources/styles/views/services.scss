@@ -14,7 +14,6 @@ section.services {
         flex-direction: row;
         align-items: stretch;
         justify-content: center;
-        // column-gap: 40px;
         @media screen and (max-width:1024px) {
             column-gap: 0px;
 
@@ -83,6 +82,7 @@ section.services {
                         border-top: 1px solid #D9D8D6;
                         padding: 22px 0px;
                         padding-bottom: 12px;
+                        position: relative;
                         &.intro {
                             padding-bottom: 12px;
                         }
@@ -100,7 +100,7 @@ section.services {
                             padding-bottom: 12px;
                             font: {
                                 weight: 300;
-                                size: clamp(12px, 2vw, 12px);
+                                size: clamp(14px, 2vw, 14px);
                             }
                             span {
                                 display: block;
@@ -117,7 +117,7 @@ section.services {
                                margin: 16px auto;
                                font: {
                                    weight: 300;
-                                   size: clamp(12px, 2vw, 12px);
+                                   size: clamp(14px, 2vw, 14px);
                                }
                            }
                         }
@@ -127,7 +127,7 @@ section.services {
                                line-height: 1.6;
                                font: {
                                    weight: 300;
-                                   size: clamp(12px, 2vw, 12px);
+                                   size: clamp(14px, 2vw, 14px);
                                }
                            }
                             
@@ -137,6 +137,19 @@ section.services {
                         }
                         &:last-of-type {
                             border-bottom: 1px solid #D9D8D6;
+                        }
+
+                        svg.accordion {
+                            position: absolute;
+                            top: 24px;
+                            right: 12px;
+                            transition: all .3s ease;
+                            &.active {
+                                transition: all .3s ease;
+                                #Line_2 {
+                                    opacity: 0;
+                                }
+                            }
                         }
                     }
                 }
@@ -156,7 +169,7 @@ section.services {
             margin-bottom: 24px;
             display: block;
             // size: clamp(12px, 3vw, 12px);
-            font-size: clamp(12px, 3vw, 12px);
+            font-size: clamp(14px, 3vw, 14px);
             span {
                 text-decoration: underline;
             }
