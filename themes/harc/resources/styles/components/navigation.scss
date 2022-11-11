@@ -86,7 +86,7 @@ section.navigation {
                         &.menu-item-has-children {
 
                             &::after {
-                                content: url('../../images/plus.svg');
+                                content: url('/wp-content/themes/harc/public/images/plus.62a406.svg');
                                 display: block;
                                 position: relative;
                                 position: absolute;
@@ -96,7 +96,7 @@ section.navigation {
                             }
                             &.active {
                                 &::after {
-                                    content: url('../../images/minus.svg');
+                                    content: url('/wp-content/themes/harc/public/images/plus.62a406.svg');
                                     display: block;
                                     position: relative;
                                     position: absolute;

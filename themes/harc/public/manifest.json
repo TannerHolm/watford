@@ -1,11 +1,9 @@
 {
-  "app.css": "css/app.a8e6fd.css",
-  "app.js": "js/app.66d531.js",
+  "app.js": "js/app.5b0f5f.js",
   "editor.css": "css/editor.31d6cf.css",
   "editor.js": "js/editor.51a65b.js",
   "runtime.js": "js/runtime.c9c28a.js",
   "js/575.fb8f9f.js": "js/575.fb8f9f.js",
-  "fonts/avenir-book.woff": "fonts/avenir-book.fec8e7.woff",
   "images/plus.svg": "images/plus.62a406.svg",
   "images/minus.svg": "images/minus.0eab18.svg",
   "images/.gitkeep": "images/.gitkeep.31d6cf"
