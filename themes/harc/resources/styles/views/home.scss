@@ -5,6 +5,7 @@ body.home {
 video.home-video {
     width: 100vw;
     height: calc(100vh - 140px);
+    display: none;
     object-fit: cover;
     object-position: top center;
     padding-top: 60px;

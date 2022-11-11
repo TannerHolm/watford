@@ -31,7 +31,8 @@ const main = async (err) => {
           // and we can set it as source on the video element
           // video.src = vid;
           video.attr('src', vid);
-          console.log('test');
+          video.fadeIn();
+
       }
     }
 

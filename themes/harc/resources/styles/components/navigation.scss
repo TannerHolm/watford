@@ -86,17 +86,20 @@ section.navigation {
                         &.menu-item-has-children {
 
                             &::after {
-                                content: url('/wp-content/themes/harc/public/images/plus.62a406.svg');
+                                content: "+";
                                 display: block;
                                 position: relative;
                                 position: absolute;
                                 top: 22px;
                                 right: 12px;
+                                color: #fff;
+                                font-weight: 100;
+                                font-family: 'Times New Roman', Times, serif;
     
                             }
                             &.active {
                                 &::after {
-                                    content: url('/wp-content/themes/harc/public/images/plus.62a406.svg');
+                                    content: "–";
                                     display: block;
                                     position: relative;
                                     position: absolute;
