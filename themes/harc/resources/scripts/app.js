@@ -46,7 +46,8 @@ const main = async (err) => {
 
 
   $('.menu-item-has-children').on('click', function(e){
-        $(this).find('ul.sub-menu').slideDown();
+        $(this).find('ul.sub-menu').slideToggle();
+        $(this).toggleClass('active');
     });
 
     $('a.menu-trigger').on('click', function(e){
@@ -61,10 +62,10 @@ const main = async (err) => {
     $('.services .content-item').on('click', function(e){
       var content = $(this).find('.content');
       var svg = $(this).find('svg.accordion');
-      $(this).find('svg').addClass('active')
+      $(this).find('svg').toggleClass('active')
       $('.content').not(content).slideUp(); 
       $('svg.accordion').not(svg).removeClass('active'); 
-      $(this).find('.content').slideDown();
+      $(this).find('.content').slideToggle();
   });
     $('.first .content-title').trigger('click');
     // application code

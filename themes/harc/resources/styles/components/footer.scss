@@ -1,6 +1,7 @@
 footer {
     background: #fff;
     padding: 0px 30px;
+    border-top: 1px solid #d9d8d6;
     @media screen and (max-width:640px) {
         padding: 24px 12px;
         border-top: 1px solid #D9D8D6;
@@ -135,4 +136,8 @@ footer {
             }
         }
     }
+}
+
+.home footer {
+    border-top: none;
 }
