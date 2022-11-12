@@ -6,5 +6,5 @@
 
 @section('content')
   <img class="cover-img" src="@field('background_video_poster_image', 'url')" alt="">
-  <video playsinline autoplay="autoplay" loop="true" autoplay="autoplay" muted poster="@field('background_video_poster_image', 'url')" class="home-video" data-src="@field('background_video', 'url')"> </video>
+  <video width="100%" height="100%" playsinline autoplay="autoplay" loop="true" autoplay="autoplay" muted poster="@field('background_video_poster_image', 'url')" class="home-video" data-src="@field('background_video', 'url')"> </video>
 @endsection
