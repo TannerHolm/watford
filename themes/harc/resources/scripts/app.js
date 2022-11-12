@@ -31,8 +31,11 @@ const main = async (err) => {
           // and we can set it as source on the video element
           // video.src = vid;
           video.attr('src', vid);
-          video.addClass('active');
-          $('.cover-img').hide();
+          setTimeout(function() {
+            video.addClass('active');
+            $('.cover-img').hide();
+          }, 200);
+          
 
       }
     }
