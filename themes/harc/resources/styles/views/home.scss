@@ -15,6 +15,9 @@ video.home-video {
         // overflow: hidden;
 
     }
+    &.active {
+        opacity: 1;
+    }
 }
 
 img.cover-img {
