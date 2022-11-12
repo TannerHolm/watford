@@ -32,7 +32,6 @@ const main = async (err) => {
           // video.src = vid;
           video.attr('src', vid);
           setTimeout(function() {
-            video.addClass('active');
             $('.cover-img').hide();
           }, 200);
           

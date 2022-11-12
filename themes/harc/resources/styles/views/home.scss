@@ -5,7 +5,7 @@ body.home {
 video.home-video {
     width: 100vw;
     height: calc(100vh - 140px);
-    opacity: 0;
+    // opacity: 0;
     object-fit: cover;
     object-position: top center;
     padding-top: 60px;
@@ -16,7 +16,7 @@ video.home-video {
 
     }
     &.active {
-        opacity: 1;
+        // opacity: 1;
     }
 }
 
