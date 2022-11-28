@@ -32,8 +32,9 @@ const main = async (err) => {
           // video.src = vid;
           video.attr('src', vid);
           setTimeout(function() {
-            $('.cover-img').fadeOut('fast');
-          }, 500);
+            // $('.cover-img').fadeOut('fast');
+            $('.cover-img').hide();
+          }, 100);
           
 
       }

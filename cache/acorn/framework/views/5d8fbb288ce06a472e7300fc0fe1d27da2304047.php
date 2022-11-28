@@ -12,4 +12,9 @@
   <?php endif; ?>
 
 <?php echo $__env->make('sections.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php /**PATH /Users/tannerholm/Sites/watford/wp-content/themes/harc/resources/views/layouts/app.blade.php ENDPATH**/ ?>
+
+<style>
+  html {
+    margin-top: 0 !important;
+}
+</style><?php /**PATH /Users/tannerholm/Sites/watford/wp-content/themes/harc/resources/views/layouts/app.blade.php ENDPATH**/ ?>

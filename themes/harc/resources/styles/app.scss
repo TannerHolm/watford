@@ -17,6 +17,25 @@ $dark: #212322;
     font-style: normal;
 }
 
+
+body.admin-bar {
+  header.banner {
+    align-items: center;
+    border-bottom: 1px solid #3d4e56;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 30px;
+    position: fixed;
+    top: 32px;
+    width: 100%;
+    z-index: 1;
+}
+}
+
 html {
   margin-top: 0 !important;
 }

@@ -12,3 +12,9 @@
   @endif
 
 @include('sections.footer')
+
+<style>
+  html {
+    margin-top: 0 !important;
+}
+</style>
