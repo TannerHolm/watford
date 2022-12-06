@@ -86,49 +86,46 @@ article.project {
     .project-gallery {
         padding: 50px;
         padding-top: 0px;
-        @media screen and (max-height:800px) {
-            padding: 200px;
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
         @media screen and (max-width:640px) {
             padding: 20px;
             padding-top: 0px;
         }
         .two-column {
             .row {
+                max-width: 1200px;
+                margin: auto;
                 margin-top: 40px;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
-                // justify-content: space-between;
-                justify-content: center;
+                justify-content: space-between;
+                // justify-content: center;
                 column-gap: 44px;
-                max-width: 1200px;
-                margin: 44px auto;
+                @media screen and (max-height: 800px) { 
+                    justify-content: center;
+
+                }
+
                 @media screen and (max-width:640px) {
                     flex-direction: column;
                     margin: 0px;
                 }
-                // @media screen and : 1400px) {
-
-                // }
                 
                 img {
                     width: calc(50% - 22px);
-                    // object-fit: cover;
-                    height: auto;
-                    // max-height: calc(100vh - 60px);
+                    // object-fit: contain;
+                    max-height: calc(100vh - 60px);
                     
                     
                     @media screen and (max-height: 800px) {
-                        // width: auto;
-                        object-fit: contain;
+                        width: auto;
+                        // object-fit: contain;
+                        // justify-content: center;
                         max-height: calc(100vh - 60px);
                     }
 
                     @media screen and (min-width: 1400px) {
-                        // width: auto;
+                        width: auto;
                     }
                     @media screen and (max-width:640px) {
                         width: 100%;
@@ -141,13 +138,13 @@ article.project {
         }
         .one-column {
             .row {
+                max-width: 1200px;
+                margin: auto;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
                 justify-content: space-between;
                 margin-top: 40px;
-                max-width: 1200px;
-                margin: 44px auto;
                 @media screen and (max-width:640px) {
                     flex-direction: column;
                     margin: 0px;
@@ -155,12 +152,10 @@ article.project {
                 img {
                     width: auto;
                     margin: auto;
-                    height: auto;
                     max-height: calc(100vh - 60px);
-
                     @media screen and (min-width: 1600px) {
                         width: auto;
-                        // max-height: calc(100vh - 60px);
+                        max-height: calc(100vh - 60px);
                     }
                     @media screen and (max-width:640px) {
                         width: 100%;
