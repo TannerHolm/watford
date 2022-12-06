@@ -36,8 +36,9 @@
         <div class="one-column">
           <div class="row">
             @php($images = get_sub_field('gallery'))
+            @php($orientation = get_sub_field('orientation'))
             @foreach($images as $image)
-              <img src="{{$image['url']}}">
+              <img class="{{$orientation}}" src="{{$image['url']}}">
             @endforeach
           </div>
         </div>

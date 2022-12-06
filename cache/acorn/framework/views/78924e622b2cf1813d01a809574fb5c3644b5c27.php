@@ -36,8 +36,9 @@
         <div class="one-column">
           <div class="row">
             <?php ($images = get_sub_field('gallery')); ?>
+            <?php ($orientation = get_sub_field('orientation')); ?>
             <?php $__currentLoopData = $images; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-              <img src="<?php echo e($image['url']); ?>">
+              <img class="<?php echo e($orientation); ?>" src="<?php echo e($image['url']); ?>">
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
           </div>
         </div>
