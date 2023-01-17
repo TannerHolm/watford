@@ -1,5 +1,8 @@
-<article class="project">
-  <img src="@field('featured_image', 'url')">
+<article class="project @if( get_field('set_image_full_width') == false) portrait  @endif">
+
+  
+
+  <img class="banner-image" src="@field('featured_image', 'url')">
 
   <div class="info-banner">
     <div class="row">

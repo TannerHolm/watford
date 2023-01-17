@@ -1,5 +1,8 @@
-<article class="project">
-  <img src="<?= get_field('featured_image')['url']; ?>">
+<article class="project <?php if( get_field('set_image_full_width') == false): ?> portrait  <?php endif; ?>">
+
+  
+
+  <img class="banner-image" src="<?= get_field('featured_image')['url']; ?>">
 
   <div class="info-banner">
     <div class="row">
