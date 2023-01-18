@@ -1,7 +1,7 @@
 @include('sections.header')
 
 
-  <main id="main" class="main">
+  <main id="main" class="main" style="overflow:hidden;">
     @yield('content')
   </main>
 

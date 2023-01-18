@@ -3,3 +3,5 @@ themes/harc/node_modules
 themes/harc/vendor
 plugins
 uploads
+.DS_Store
+themes/.DS_Store

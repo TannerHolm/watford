@@ -1,0 +1,1 @@
+/www/kinsta/public/watford/wp-content/plugins/query-monitor/wp-content/db.php

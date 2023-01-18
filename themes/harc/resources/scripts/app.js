@@ -1,12 +1,18 @@
 import {domReady} from '@roots/sage/client';
 // import ResponsiveVideoPoster from 'responsive-video-poster';
 
-// const responsiveVideoPosterDefault = ResponsiveVideoPoster({ 
-//   selector: '#responsive-video-poster--default' 
+// const responsiveVideoPosterDefault = ResponsiveVideoPoster({
+//   selector: '#responsive-video-poster--default'
 // });
 /**
  * app.main
  */
+
+const video = document.querySelector("video");
+video.addEventListener("timeupdate", () => {
+  video.classList.add("active");
+}, { once: true });
+
 const main = async (err) => {
   if (err) {
     // handle hmr errors
@@ -20,7 +26,7 @@ const main = async (err) => {
     var req = new XMLHttpRequest();
     req.open('GET', vidSrc, true);
     req.responseType = 'blob';
-  
+
     req.onload = function() {
       // Onload is triggered even on 404
       // so we need to check the status code
@@ -35,18 +41,18 @@ const main = async (err) => {
             // $('.cover-img').fadeOut('fast');
             $('.cover-img').hide();
           }, 100);
-          
+
 
       }
     }
 
-    
+
     req.onerror = function() {
       // Error
     }
-    
+
     req.send();
-    
+
   }
 
 
@@ -68,14 +74,14 @@ const main = async (err) => {
       var content = $(this).find('.content');
       var svg = $(this).find('svg.accordion');
       $(this).find('svg').toggleClass('active')
-      $('.content').not(content).slideUp(); 
-      $('svg.accordion').not(svg).removeClass('active'); 
+      $('.content').not(content).slideUp();
+      $('svg.accordion').not(svg).removeClass('active');
       $(this).find('.content').slideToggle();
   });
     $('.first .content-title').trigger('click');
     // application code
   };
-  
+
   /**
    * Initialize
  *
