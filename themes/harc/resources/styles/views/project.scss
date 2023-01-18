@@ -1,50 +1,51 @@
 article.project {
     padding-top: 60px;
-    @media screen and (max-width:640px) {
+    @media screen and (min-width:640px) {
         // padding-top: 0px;
 
-    }
-    &.portrait {
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-        .banner-image {
-                width: calc(50% - 20px);
-                height: auto;
-                float: right;
-                margin-top: 60px;
-                @media screen and (max-width:640px) {
-                    width: 100%;
-                    float: none;
-                    margin-bottom: 0px;
+        &.portrait {
+            
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            .banner-image {
+                    width: calc(50% - 20px);
+                    height: auto;
+                    float: right;
                     margin-top: 60px;
-                }
-        }
-        .info-banner {
-            float:left;
-            max-width: 40%;
-            margin-top: 100px;
-            padding: 0px;
-            @media screen and (max-width:640px) {
-                margin-top: 40px;
+                    @media screen and (max-width:640px) {
+                        width: 100%;
+                        float: none;
+                        margin-bottom: 0px;
+                        margin-top: 60px;
+                    }
             }
-            .row {
-                flex-direction: column;
-                align-items: flex-start;
-                .details {
+            .info-banner {
+                float:left;
+                max-width: 40%;
+                margin-top: 100px;
+                padding: 0px;
+                @media screen and (max-width:640px) {
+                    margin-top: 40px;
+                }
+                .row {
                     flex-direction: column;
                     align-items: flex-start;
-                    margin-top: 40px;
-                    .detail {
-                        margin-bottom: 40px;
+                    .details {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-top: 40px;
+                        .detail {
+                            margin-bottom: 40px;
+                        }
                     }
                 }
             }
-        }
-        .project-gallery {
-            clear: both;
-            padding: 40px 0px;
-
+            .project-gallery {
+                clear: both;
+                padding: 40px 0px;
+    
+            }
         }
     }
     .info-banner {
