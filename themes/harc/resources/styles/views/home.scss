@@ -1,26 +1,21 @@
 body.home {
     height: 100vh;
-    // overflow: hidden;
 }
 video.home-video {
     width: 100vw;
     height: calc(100vh - 140px);
-    // opacity: 0;
     object-fit: cover;
     object-position: top center;
-    padding-top: 60px;
+    // padding-top: 60px;
     -webkit-perspective: 1000;
     -webkit-transform: translate3d(0,0,0);
     z-index: 9999;
     transform: translateZ(0);
     @media screen and (max-width:640px) {
-        // padding-top: 0px;
         height: calc(100vh - 250px);
-        // overflow: hidden;
         background: #fff;
     }
     &.active {
-        // opacity: 1;
     }
 }
 
