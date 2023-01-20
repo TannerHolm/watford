@@ -3,9 +3,9 @@ article.project {
     @media screen and (min-width:640px) {
         &.portrait {
             
-            max-width: 1200px;
+            // max-width: 1200px;
             margin: auto;
-            padding: 0 20px;
+            padding: 0 200px;
             .banner-image {
                     width: calc(50% - 20px);
                     height: auto;
@@ -126,9 +126,9 @@ article.project {
         }
     }
     .project-gallery {
-        // padding: 0 200px;
+        padding: 0 200px;
         padding-top: 0px;
-        max-width: 1200px;
+        // max-width: 1200px;
         margin: auto;
         padding: 0 20px;
         @media screen and (max-width:1000px) {
@@ -141,7 +141,7 @@ article.project {
         }
         .two-column {
             .row {
-                max-width: 1200px;
+                // max-width: 1200px;
                 margin: auto;
                 margin-top: 40px;
                 display: flex;
@@ -186,7 +186,7 @@ article.project {
         }
         .one-column {
             .row {
-                max-width: 1200px;
+                // max-width: 1200px;
                 margin: auto;
                 display: flex;
                 flex-direction: row;
