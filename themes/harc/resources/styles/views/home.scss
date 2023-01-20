@@ -6,7 +6,7 @@ video.home-video {
     height: calc(100vh - 140px);
     object-fit: cover;
     object-position: top center;
-    // padding-top: 60px;
+    padding-top: 60px;
     -webkit-perspective: 1000;
     -webkit-transform: translate3d(0,0,0);
     z-index: 9999;
