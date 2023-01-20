@@ -1,12 +1,11 @@
 article.project {
     padding-top: 60px;
     @media screen and (min-width:640px) {
-        // padding-top: 0px;
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-
         &.portrait {
+            
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
             .banner-image {
                     width: calc(50% - 20px);
                     height: auto;
@@ -129,6 +128,9 @@ article.project {
     .project-gallery {
         // padding: 0 200px;
         padding-top: 0px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
         @media screen and (max-width:1000px) {
             padding: 0 100px;
             padding-top: 0px;
